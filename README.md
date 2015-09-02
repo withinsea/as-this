@@ -41,7 +41,7 @@ Usage
 Scenario
 ---------
 
-+ ** use as to create object with interdependent properties **
++ use as to create object with interdependent properties
 
   ```coffeescript
   as = require 'as-this'
@@ -69,7 +69,7 @@ Scenario
     }
   ```
 
-+ ** use as.call to yield promised function with given scope **
++ use as.call to yield promised function with given scope
 
   ```coffeescript
   co = require 'co'
