@@ -1,0 +1,27 @@
+{
+  "name": "as-this",
+  "description": "Call an javascript function with `this` referred to the first argument",
+  "version": "1.0.0",
+  "keywords": [
+    "nodejs",
+    "coffeescript"
+  ],
+  "author": {
+    "name": "Mo Chen",
+    "email": "withinsea@gmail.com"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/mit-license.php"
+  },
+  "homepage": "https://www.npmjs.com/package/as-this",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/withinsea/as-this.git"
+  },
+  "bugs": {
+    "url": "https://github.com/withinsea/as-this/issues"
+  },
+  "main": "as-this.js",
+  "dependencies": {}
+}
