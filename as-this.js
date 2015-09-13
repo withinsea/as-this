@@ -3,8 +3,14 @@ var slice = Array.prototype.slice;
 var as = module.exports = function() {
   var self;
   self = arguments[0];
-  as.call.apply(as, arguments);
-  return self;
+  ret = as.call.apply(as, arguments);
+  if (ret && typeof ret.then === 'function') {
+    return ret.then(function () {
+      return self;
+    });
+  } else {
+    return self;
+  }
 };
 
 as.call = function() {
