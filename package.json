@@ -1,7 +1,7 @@
 {
   "name": "as-this",
   "description": "Call an javascript function with `this` referred to the first argument",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "keywords": [
     "nodejs",
     "coffeescript"
@@ -23,5 +23,7 @@
     "url": "https://github.com/withinsea/as-this/issues"
   },
   "main": "as-this.js",
-  "dependencies": {}
+  "dependencies": {
+    "co": "^4.6.0"
+  }
 }
