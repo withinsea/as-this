@@ -28,7 +28,7 @@ Usage
 
 + ### as.call (self, fn)
 
-  get the return value of `fn` instead of `self`
+  get the return value of `fn` instead of `self`:
 
   ```coffeescript
   as = require 'as-this'
@@ -39,11 +39,11 @@ Usage
 
 + ### omits self
 
-  parameter `self` with be assigned to `{}` if not specified.
+  parameter `self` with be assigned to `{}` if not specified:
 
   ```coffeescript
   as = require 'as-this'
-  ret as ->
+  ret = as ->
     @msg = 'Hello, World'
   console.log ret  # => { msg: 'Hello, World' }
   ```
@@ -62,7 +62,7 @@ Usage
     console.log ret  # => { msg: 'Hello, World' }
   ```
 
-  use co-yield to clear your non-blocking code:
+  use co-yield to clean your non-blocking code (not available in browser environment):
 
   ```coffeescript
   co = require 'co'
@@ -129,7 +129,7 @@ Scenario
     }
   ```
 
-+ ### do complex configuration on a main scope object
++ ### do complex configuration on a specified object
 
   ```coffeescript
   as = require 'as-this'
