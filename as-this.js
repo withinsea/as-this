@@ -2,7 +2,7 @@ var co = require('co')
 var slice = Array.prototype.slice;
 
 var as = module.exports = function as(self, fn) {
-  if (typeof self === 'function') {
+  if (!fn && typeof self === 'function') {
     fn = self;
     self = {};
   }
@@ -17,7 +17,7 @@ var as = module.exports = function as(self, fn) {
 };
 
 as.call = function(self, fn) {
-  if (typeof self === 'function') {
+  if (!fn && typeof self === 'function') {
     fn = self;
     self = {};
   }

@@ -1,7 +1,7 @@
 {
   "name": "as-this",
   "description": "Call an javascript function with `this` referred to the first argument",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "keywords": [
     "nodejs",
     "coffeescript"
